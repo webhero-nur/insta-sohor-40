@@ -155,6 +155,7 @@ const displayLikedPosts = () => {
 
 const displayReportedPosts = () => {
   const reportedPosts = getReportedPosts();
+  // clear previous appended child
   document.getElementById("reported").textContent = '';
   reportedPosts.forEach((post) => {
     const div = createPost(post);
